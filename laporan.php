@@ -1,0 +1,30 @@
+<?php
+// Terminal: php artisan make:model laporan -m
+// Location: app > Models
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class laporan extends Model
+{
+    use HasFactory;
+
+    protected $table = 'laporan';
+
+    protected $fillable = [
+        'kategori',
+        'name',
+        'alamat',
+        'aspirasi',
+        'keterangan',
+        'gambar_kejadian',
+        'status',
+        'created_by',
+        'updated_by',
+        'deleted_by',
+        'created_at',
+        'deleted_at'
+    ];
+}
